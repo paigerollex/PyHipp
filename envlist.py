@@ -44,10 +44,13 @@ with lock:
         # prefix envprefix
         # add code here
 <<<<<<< HEAD
+<<<<<<< HEAD
         clist = []
         for i in range(64):
             clist.append('cenv'+str(i))
 
+=======
+>>>>>>> upstream/main
 =======
 >>>>>>> upstream/main
     else:
@@ -57,6 +60,7 @@ with lock:
         if pmode == WRITE_MODE:
             # append item to end of list
             # add code here
+<<<<<<< HEAD
 <<<<<<< HEAD
             clist.append(env)
 
@@ -69,11 +73,17 @@ with lock:
             # get and remove env from clist
             # add code here
 >>>>>>> upstream/main
+=======
+        else:    
+            # get and remove env from clist
+            # add code here
+>>>>>>> upstream/main
             # return env name
             print(env)
 
     # save hickle file
     hickle.dump(clist, file_path, mode="w")
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 
@@ -92,5 +102,7 @@ with lock:
 
 
 
+=======
+>>>>>>> upstream/main
 =======
 >>>>>>> upstream/main
